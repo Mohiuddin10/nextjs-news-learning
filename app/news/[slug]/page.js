@@ -10,7 +10,7 @@ export default function NewsDetails({ params }) {
     }
     return <article className="news-article">
         <header>
-            <Link href={`/news/${newsItem.slug}/image`}>
+            <Link href={`/news/${newsItem.slug}/@modal/default.js`}>
                 <img src={`/images/news/${newsItem.image}`} alt={`${newsItem.title}`} />
             </Link>
             <h1>{newsItem.title}</h1>
